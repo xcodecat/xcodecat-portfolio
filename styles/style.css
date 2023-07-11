@@ -52,7 +52,7 @@ main h1 {
   position: fixed;
   background-color: var(--nav-primary);
   transition: width 600ms ease;
-  overflow: scroll;
+  overflow: hidden;
 }
 
 .navbar-nav {
