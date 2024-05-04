@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Coming Soon</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+        .blob1 {
+            background-image: url(assets/blob-1.svg);
+            background-repeat: no-repeat;
+            background-size: contain;
+        }
+        .center {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+        }
+        .blobs {
+            height: 900px;
+            width: 900px;
+            position: absolute;
+        }
+        .text-container {
+            position: relative;
+            z-index: 1;
+            text-align: center;
+        }
+        .text-container h2 {
+            font-family: 'Lato', sans-serif;
+            font-size: 4em;
+            margin: 0;
+            font-weight: 500;
+            color: #282024;
+        }
+        .text-container p {
+            font-family: 'Lato', sans-serif;
+            font-size: 3em;
+            margin: 0;
+            font-weight: 300;
+        }
+    </style>
+</head>
+<body class="center" style="overflow:hidden;">
+    <div class="blobs center blob1">
+        <img class="center blobs" src="assets/blob-2.svg">
+    </div>
+    <div class="text-container">
+        <h2>COMING SOON!</h2>
+        <p style="color: #63505b;">stay tuned!</p>
+    </div>
+</body>
+</html>
