@@ -6,50 +6,85 @@
     <title>Coming Soon</title>
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
-        .blob1 {
-            background-image: url(assets/blob-1.svg);
-            background-repeat: no-repeat;
-            background-size: contain;
+        body, html {
+            margin: 0;
+            padding: 0;
+            overflow: hidden; /* Verhindert das Scrollen */
+            width: 100%;
+            height: 100%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #f8f8f8; /* Hintergrundfarbe */
         }
         .center {
             display: flex;
             flex-direction: column;
-            justify-content: center;
             align-items: center;
-            height: 100vh;
+            justify-content: center;
+            width: 100%;
+            height: 100%;
+            position: relative; /* Wichtig für die Positionierung der Kind-Elemente */
         }
-        .blobs {
-            height: 900px;
-            width: 900px;
+        .blob1, .blobs {
+            background: url('assets/blob-1.svg') no-repeat center center;
+            background-size: contain;
             position: absolute;
+            width: 100%;
+            height: 100%;
+        }
+        .blobs img {
+            width: 100%;
+            height: auto;
+            max-height: 100%;
+            object-fit: contain;
+            position: absolute;
+            top: 50%; /* Zentriert das Bild vertikal */
+            left: 50%; /* Zentriert das Bild horizontal */
+            transform: translate(-50%, -50%); /* Verschiebt das Bild von seinem Mittelpunkt aus */
         }
         .text-container {
-            position: relative;
+            position: absolute;
             z-index: 1;
+            width: 100%;
             text-align: center;
+            top: 50%; /* Zentriert den Text vertikal */
+            transform: translateY(-50%); /* Verschiebt den Text von seiner Mitte aus vertikal */
+        }
+        .text-container h2, .text-container p {
+            font-family: 'Lato', sans-serif;
+            margin: 0;
         }
         .text-container h2 {
-            font-family: 'Lato', sans-serif;
-            font-size: 4em;
-            margin: 0;
+            font-size: 6vw; /* Anpassbare Schriftgröße basierend auf der Breite des Viewports */
             font-weight: 500;
             color: #282024;
         }
         .text-container p {
-            font-family: 'Lato', sans-serif;
-            font-size: 3em;
-            margin: 0;
+            font-size: 4.5vw; /* Anpassbare Schriftgröße basierend auf der Breite des Viewports */
+            color: #63505b;
             font-weight: 300;
+        }
+
+        /* Media Query für größere Bildschirme */
+        @media (min-width: 1024px) {
+            .text-container h2 {
+                font-size: 3vw; /* Reduzierte Schriftgröße für Desktop */
+            }
+            .text-container p {
+                font-size: 2vw; /* Reduzierte Schriftgröße für Desktop */
+            }
         }
     </style>
 </head>
-<body class="center" style="overflow:hidden;">
-    <div class="blobs center blob1">
-        <img class="center blobs" src="assets/blob-2.svg">
+<body>
+    <div class="center blob1"></div>
+    <div class="center blobs">
+        <img src="assets/blob-2.svg">
     </div>
     <div class="text-container">
         <h2>COMING SOON!</h2>
-        <p style="color: #63505b;">stay tuned!</p>
+        <p>stay tuned!</p>
     </div>
 </body>
 </html>
