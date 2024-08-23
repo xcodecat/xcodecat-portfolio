@@ -3,7 +3,7 @@
 	let projects = [
 		{
 			name: 'Memory Game',
-			description: 'A two player Memory Game written in Java',
+			description: 'A two-player memory game written in Java, featuring Disney character images.',
 			technologies: ['Java', 'JavaFX'],
 			iconClass: 'fas fa-gamepad',
 			link: 'https://github.com/xcodecat/memory-game'
@@ -24,14 +24,14 @@
 		},
 		{
 			name: 'Problems',
-			description: 'A repository where I solve problems in multiple languages',
+			description: 'A repository featuring solutions to problems across various programming languages.',
 			technologies: ['Kotlin'],
 			iconClass: 'fa-solid fa-circle-xmark',
 			link: 'https://github.com/xcodecat/problems'
 		},
 		{
 			name: 'Alle Meine Entchen',
-			description: 'The german children song "Alle Meine Entchen" on an Arduino Board using a Piezo ELement',
+			description: "A rendition of the German children's song 'Alle Meine Entchen' played on an Arduino board using a piezo element.",
 			technologies: ['Elements of C & C++'],
 			iconClass: 'fa-solid fa-music',
 			link: 'https://github.com/xcodecat/alleMeineEntchen'
