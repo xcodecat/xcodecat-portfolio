@@ -87,7 +87,7 @@
 		align-items: center;
 		position: absolute;
 		bottom: 0;
-		right: 0;
+		right: 1vw;
 		padding: 5px;
 	}
 	.icons > * {
