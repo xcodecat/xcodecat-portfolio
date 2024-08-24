@@ -104,10 +104,7 @@
 		margin: 0 0px;
 		transition: transform 0.2s;
 	}
-	.icon-button i.fab.fa-reddit {
-		color: #e0e0e0;
-	}
-	.icon-button i.fa-brands.fa-github {
+	.icon-button i.fab.fa-reddit, i.fa-brands.fa-github {
 		color: #e0e0e0;
 	}
 	.icon-button:hover {
@@ -175,6 +172,12 @@
 		}
 		50% {
 			transform: translateY(5px) rotate(45deg);
+		}
+	}
+
+	@media only screen and (max-width: 600px) {
+		.scroll-indicator {
+			display: none;
 		}
 	}
 </style>

@@ -3,14 +3,12 @@
 	let languages = [
 		{
 			name: 'Python',
-			description:
-				'Developed a Discord bot and a script for organizing the download folder.',
+			description: 'Developed a Discord bot and a script for organizing the download folder.',
 			iconClass: 'fab fa-python'
 		},
 		{
 			name: 'Java',
-			description:
-				'School projects in object-oriented programming, including a memory game.',
+			description: 'School projects in object-oriented programming, including a memory game.',
 			iconClass: 'fab fa-java'
 		},
 		{
@@ -35,7 +33,7 @@
 </script>
 
 <section id="skills">
-	<div id="text">
+	<div class="text">
 		<h1>Skills</h1>
 	</div>
 	<div class="cards-container">
@@ -50,6 +48,11 @@
 </section>
 
 <style>
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
 	#skills {
 		background-color: #d0d0d0;
 		display: flex;
@@ -58,11 +61,13 @@
 		align-items: center;
 		padding: 20px;
 		min-height: 100vh;
+		width: 100%;
 	}
 
-	#text {
+	.text {
 		text-align: center;
 		margin-bottom: 20px;
+		width: 100%;
 	}
 
 	h1 {
@@ -74,21 +79,28 @@
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 20px;
+		gap: 30px;
+		width: 100%;
 		max-width: 1200px;
+		margin: 0 auto;
+		padding: 0 20px;
+		overflow: hidden;
 	}
 
 	.card {
 		background-color: #ffffff;
 		border-radius: 10px;
 		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		width: 250px;
-		padding: 20px;
+		width: 100%;
+		max-width: 350px;
+		padding: 30px;
 		text-align: center;
 		transition: transform 0.3s ease;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
+		flex-shrink: 0;
+		margin: 0;
 	}
 
 	.card:hover {
@@ -96,20 +108,64 @@
 	}
 
 	.card i {
-		font-size: 60px;
-		margin-bottom: 15px;
+		font-size: 70px;
+		margin-bottom: 20px;
 		color: #333;
 	}
 
 	.card h3 {
-		font-size: 1.5em;
-		margin: 10px 0;
+		font-size: 1.8em;
+		margin: 15px 0;
 		color: #333333;
 	}
 
 	.card p {
-		font-size: 1em;
+		font-size: 1.1em;
 		color: #666666;
-		line-height: 1.6;
+		line-height: 1.8;
+	}
+
+	@media (max-width: 992px) {
+		.cards-container {
+			justify-content: center;
+			gap: 20px;
+		}
+
+		.card {
+			flex: 1 1 45%;
+			max-width: 100%;
+		}
+	}
+
+	@media (max-width: 768px) {
+		h1 {
+			font-size: 2.5rem;
+		}
+
+		.card {
+			flex: 1 1 80%;
+			max-width: 100%;
+			margin: 0 auto;
+		}
+	}
+
+	@media (max-width: 576px) {
+		h1 {
+			font-size: 2rem;
+		}
+
+		.card {
+			padding: 20px;
+			max-width: 250px;
+			margin: 0 auto;
+		}
+
+		.card h3 {
+			font-size: 1.3rem;
+		}
+
+		.card p {
+			font-size: 0.9rem;
+		}
 	}
 </style>

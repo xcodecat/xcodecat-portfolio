@@ -1,5 +1,6 @@
 <script>
 	import '@fortawesome/fontawesome-free/css/all.min.css';
+	
 	let projects = [
 		{
 			name: 'Memory Game',
@@ -32,7 +33,7 @@
 		{
 			name: 'Alle Meine Entchen',
 			description: "A rendition of the German children's song 'Alle Meine Entchen' played on an Arduino board using a piezo element.",
-			technologies: ['Elements of C & C++'],
+			technologies: ['C', 'C++', 'Arduino'],
 			iconClass: 'fa-solid fa-music',
 			link: 'https://github.com/xcodecat/alleMeineEntchen'
 		}
@@ -40,7 +41,7 @@
 </script>
 
 <section id="projects">
-	<div id="text">
+	<div class="text">
 		<h1>Projects</h1>
 	</div>
 	<div class="projects-container">
@@ -54,122 +55,169 @@
 						<li>{tech}</li>
 					{/each}
 				</ul>
-				<a href={project.link} target="_blank">View Project</a>
+				<a href={project.link} target="_blank" rel="noopener noreferrer">View Project</a>
 			</div>
 		{/each}
 	</div>
 </section>
 
-<style lang="css">
+<style>
+	/* General Reset */
+	* {
+		box-sizing: border-box;
+		margin: 0;
+		padding: 0;
+	}
+
+	/* Section Styling */
 	#projects {
-		background-color: #b3b3b3;
-		padding: 20px;
+		background-color: #f5f5f5;
+		padding: 60px 20px;
 		display: flex;
 		flex-direction: column;
-		justify-content: center;
 		align-items: center;
 		min-height: 100vh;
+	}
+
+	.text {
+		margin-bottom: 40px;
 		text-align: center;
 	}
 
-	#text {
-		margin-bottom: 20px;
-	}
-
 	h1 {
-		font-size: 4em;
-		margin: 0;
+		font-size: 3rem;
 		color: #333;
 	}
 
+	/* Projects Container */
 	.projects-container {
 		display: flex;
 		flex-wrap: wrap;
 		justify-content: center;
-		gap: 20px;
+		gap: 30px;
+		width: 100%;
 		max-width: 1200px;
-		margin: 0 auto;
 	}
 
+	/* Project Card Styling */
 	.project-card {
 		background-color: #ffffff;
 		border-radius: 10px;
-		box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-		width: 300px;
-		padding: 20px;
-		text-align: center;
-		transition: transform 0.3s ease;
+		box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+		padding: 30px;
+		flex: 1 1 300px; /* Flexible basis with min width of 300px */
+		max-width: 350px;
 		display: flex;
 		flex-direction: column;
 		align-items: center;
-		justify-content: space-between;
+		text-align: center;
+		transition: transform 0.3s ease, box-shadow 0.3s ease;
 	}
 
 	.project-card:hover {
-		transform: translateY(-5px);
+		transform: translateY(-10px);
+		box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
 	}
 
 	.project-card i {
-		font-size: 60px;
-		margin-bottom: 15px;
-		color: #333;
+		font-size: 3rem;
+		margin-bottom: 20px;
+		/* Beibehalten der ursprünglichen Farbe */
+		color: inherit;
 	}
 
 	.project-card h3 {
-		font-size: 1.5em;
-		margin: 10px 0;
+		font-size: 1.5rem;
 		color: #333;
+		margin-bottom: 15px;
 	}
 
 	.project-card p {
-		font-size: 1em;
-		color: #666;
-		line-height: 1.6;
-		margin-bottom: 15px;
+		font-size: 1rem;
+		color: #555;
+		margin-bottom: 20px;
+		line-height: 1.5;
 	}
 
 	.project-card ul {
 		list-style: none;
-		padding: 0;
-		margin: 0;
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: center;
+		gap: 10px;
+		margin-bottom: 20px;
 	}
 
 	.project-card li {
-		background-color: #e0e0e0;
-		border-radius: 5px;
-		padding: 5px 10px;
-		margin: 5px 5px;
-		display: inline-block;
+		background-color: #e9ecef;
+		color: #333;
+		border-radius: 20px;
+		padding: 5px 15px;
+		font-size: 0.9rem;
 	}
 
 	.project-card a {
-		color: #007bff;
+		color: #ffffff;
+		background-color: #3498DB;
+		padding: 10px 20px;
+		border-radius: 5px;
 		text-decoration: none;
-		font-weight: bold;
-		margin-top: auto;	
+		font-weight: 500;
+		transition: background-color 0.3s ease;
+		margin-top: auto;
 	}
 
 	.project-card a:hover {
-		text-decoration: underline;
+		background-color: #0056b3;
+	}
+
+	/* Responsive Design */
+	@media (max-width: 992px) {
+		.projects-container {
+			gap: 20px;
+		}
+
+		.project-card {
+			flex: 1 1 45%;
+			max-width: 100%;
+		}
 	}
 
 	@media (max-width: 768px) {
-		.project-card {
-			width: 90%;
+		h1 {
+			font-size: 2.5rem;
 		}
 
-		h1 {
-			font-size: 2em;
+		.project-card {
+			flex: 1 1 100%;
 		}
 	}
 
-	@media (max-width: 480px) {
-		.project-card {
-			width: 100%;
+	@media (max-width: 576px) {
+		h1 {
+			font-size: 2rem;
 		}
 
-		h1 {
-			font-size: 1.5em;
+		.project-card {
+			padding: 20px;
+		}
+
+		.project-card h3 {
+			font-size: 1.3rem;
+		}
+
+		.project-card p {
+			font-size: 0.9rem;
+		}
+
+		.project-card li {
+			font-size: 0.8rem;
+			padding: 4px 10px;
+		}
+
+		.project-card a {
+			padding: 8px 16px;
+			font-size: 0.9rem;
 		}
 	}
 </style>
