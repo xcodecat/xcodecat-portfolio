@@ -2,7 +2,7 @@
 	<div class="text">
 		<h1>About Me</h1>
 		<p>
-			I'm a <b>17-year-old student and beginner</b> in <b>web development</b>, passionate about
+			I'm a <b>18-year-old student and beginner</b> in <b>web development</b>, passionate about
 			turning ideas into reality through <b>code</b>.<br />
 			Although I'm still learning, I've already gained the skills to create <b>engaging</b>,
 			<b>functional <b>websites</b></b> and I’m eager to keep improving.<br />
