@@ -22,12 +22,6 @@
 			description:
 				'Basic knowledge of Android development, with an interest in mobile applications.',
 			iconClass: 'fa-brands fa-android'
-		},
-		{
-			name: 'Go',
-			description:
-				'Exploratory learning, with an interest in systems programming and new technologies.',
-			iconClass: 'fa-brands fa-golang'
 		}
 	];
 </script>
@@ -84,7 +78,7 @@
 		max-width: 1200px;
 		margin: 0 auto;
 		padding: 0 20px;
-		overflow: hidden;
+		overflow: visible;
 	}
 
 	.card {
@@ -101,10 +95,12 @@
 		align-items: center;
 		flex-shrink: 0;
 		margin: 0;
+		position: relative;
 	}
 
 	.card:hover {
 		transform: translateY(-5px);
+		z-index: 1;
 	}
 
 	.card i {

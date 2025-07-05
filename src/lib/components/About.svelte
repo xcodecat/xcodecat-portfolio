@@ -8,9 +8,10 @@
 			<b>functional <b>websites</b></b> and I’m eager to keep improving.<br />
 			I'm also exploring the world of <b>IoT</b>, where <b>technology</b> enhances everyday life.<br
 			/><br />
-			Beyond coding, I express my <b>creativity</b> through <b>guitar playing</b>.<br />
-			In my free time, I enjoy the <b>outdoors</b>, finding inspiration in <b>nature</b>.<br /><br
-			/>
+			Beyond coding, I express my <b>creativity</b> through <b>guitar playing</b> and a love for
+			<b>reading</b>.<br />
+			In my free time, I enjoy the <b>outside world</b>, finding inspiration in <b>nature</b> and
+			books alike.<br /><br />
 			I'm excited to continue growing, blending <b>technology</b> and <b>creativity</b> as I learn more
 			every day.
 		</p>

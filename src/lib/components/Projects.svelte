@@ -10,13 +10,6 @@
 			link: 'https://github.com/xcodecat/memory-game'
 		},
 		{
-			name: 'Automate Download Delete',
-			description: 'Script for Automating Downloads Folder Cleanup',
-			technologies: ['Python'],
-			iconClass: 'fa-solid fa-trash',
-			link: 'https://github.com/xcodecat/automate-download-delete'
-		},
-		{
 			name: 'bapp - Bunkerpost digital',
 			description: 'The digital school newspaper of HSG Erlenbach (for students only)',
 			technologies: ['VueJS', 'JavaScript', 'HTML & CSS', 'MariaDB'],
@@ -24,11 +17,25 @@
 			link: 'https://bapp.hsgerlenbach.de'
 		},
 		{
-			name: 'Problems',
-			description: 'A repository featuring solutions to problems across various programming languages.',
-			technologies: ['Kotlin'],
-			iconClass: 'fa-solid fa-circle-xmark',
-			link: 'https://github.com/xcodecat/problems'
+			name: 'Mercatura Management',
+			description: 'Supermarket Management System',
+			technologies: ['Java', 'CSV', 'txt'],
+			iconClass: 'fa-solid fa-shop',
+			link: 'https://github.com/xcodecat/mercatura-management/'
+		},
+		{
+			name: 'csv visualizer',
+			description: 'Website to visualize your csv files',
+			technologies: ['NextJS', 'TypeScript'],
+			iconClass: 'fa-solid fa-chart-simple',
+			link: 'https://csv.laurathiel.dev'
+		},
+		{
+			name: 'Automate Download Delete',
+			description: 'Script for Automating Downloads Folder Cleanup',
+			technologies: ['Python'],
+			iconClass: 'fa-solid fa-trash',
+			link: 'https://github.com/xcodecat/automate-download-delete'
 		},
 		{
 			name: 'Alle Meine Entchen',
