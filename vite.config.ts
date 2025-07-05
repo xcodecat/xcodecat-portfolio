@@ -5,5 +5,8 @@ export default defineConfig({
 	plugins: [sveltekit()],
 	preview: {
 		allowedHosts: ["laurathiel.dev"]
+	},
+	build: {
+		outDir: "./dist"
 	}
 });
