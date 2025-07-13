@@ -24,14 +24,19 @@
 				<i class="fa-brands fa-github"></i>
 			</a>
 		</button>
+		<button class="icon-button">
+			<a href="https://open.spotify.com/user/7dd2kvc76jf2mm66zfyt3abf1" target="_blank">
+				<i class="fa-brands fa-spotify"></i>
+			</a>
+		</button>
 	</div>
 </center>
 
 <style lang="css">
 	@import url('https://fonts.googleapis.com/css2?family=Mate:ital@0;1&display=swap');
-	
-    /* Hero */
-    .hero {
+
+	/* Hero */
+	.hero {
 		width: 100vw;
 		height: 100vh;
 		display: flex;
@@ -50,7 +55,7 @@
 		position: relative;
 	}
 
-    /* Text */
+	/* Text */
 	.name {
 		margin: 0;
 	}
@@ -76,10 +81,10 @@
 		font-style: normal;
 		font-size: larger;
 		text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.7);
-        margin: 0;
+		margin: 0;
 	}
 
-    /* Icons */
+	/* Icons */
 	.icons {
 		display: flex;
 		flex-direction: row;
@@ -90,10 +95,12 @@
 		right: 1vw;
 		padding: 5px;
 	}
+
 	.icons > * {
 		font-size: 24px;
 		margin: 0 5px;
 	}
+
 	.icon-button {
 		color: #e0e0e0;
 		background-color: transparent;
@@ -104,17 +111,33 @@
 		margin: 0 0px;
 		transition: transform 0.2s;
 	}
-	.icon-button i.fab.fa-reddit, i.fa-brands.fa-github {
+
+	.icon-button i {
 		color: #e0e0e0;
+		transition: color 0.3s ease;
 	}
+
 	.icon-button:hover {
 		transform: scale(1.1);
 	}
+
+	.icon-button:hover i.fa-spotify {
+		color: #1db954; /* Spotify Green */
+	}
+
+	.icon-button:hover i.fa-github {
+		color: #999;
+	}
+
+	.icon-button:hover i.fa-reddit {
+		color: #ff4500;
+	}
+
 	.icon-button:focus {
 		outline: none;
 	}
 
-    /* Mouse */
+	/* Mouse */
 	.scroll-indicator {
 		position: absolute;
 		bottom: 30px;
