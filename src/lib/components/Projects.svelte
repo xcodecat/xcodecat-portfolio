@@ -5,7 +5,7 @@
 		{
 			name: 'Memory Game',
 			description: 'A two-player memory game written in Java, featuring Disney character images.',
-			technologies: ['Java', 'JavaFX'],
+			technologies: ['Java', 'Java Swing'],
 			iconClass: 'fas fa-gamepad',
 			link: 'https://github.com/xcodecat/memory-game'
 		},
