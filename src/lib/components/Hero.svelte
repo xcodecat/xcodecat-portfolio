@@ -5,7 +5,7 @@
 <center class="hero">
 	<div class="container">
 		<h1 class="name">Laura Thiel</h1>
-		<p class="comment">Aspiring Developer</p>
+		<p class="comment">Developer</p>
 	</div>
 	<div class="scroll-indicator">
 		<div class="mouse">
